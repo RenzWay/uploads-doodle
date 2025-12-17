@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Downloader</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ig story man</h1>
+    </header>
+    <main>
+      <button id="dialogOpen">+</button>
+      <dialog id="dialogForm">
+        <form id="formIg" action="">
+          <label for="name">Nama</label><br />
+          <input type="text" name="name" id="name" /><br />
+
+          <label for="title">title</label><br />
+          <input type="text" name="title" id="title" /><br />
+
+          <label for="content">Deskripsi</label><br />
+          <input type="text" name="content" id="content" /><br />
+
+          <label for="file">Tambah gambar</label><br />
+          <input type="file" name="image" id="image" /><br />
+
+          <img
+            id="previewImage"
+            style="display: none; max-width: 200px; margin-top: 10px" />
+
+          <div>
+            <input type="submit" name="submit" id="submit" />
+            <button type="button" id="closeDialog">cancel</button>
+          </div>
+        </form>
+      </dialog>
+      <ul id="listIg"></ul>
+    </main>
+    <script type="module" src="./src/script/main.ts"></script>
+  </body>
+</html>
